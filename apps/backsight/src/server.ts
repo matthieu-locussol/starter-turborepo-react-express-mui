@@ -13,7 +13,7 @@ export const createServer = () => {
       .get('/message/:name', (req, res) => {
          return res.json({ message: `hello ${req.params.name}` });
       })
-      .get('/healthz', (req, res) => {
+      .get('/', (req, res) => {
          return res.json({ ok: true });
       });
 
