@@ -19,6 +19,9 @@
       "storybook": "start-storybook -p 6006",
       "build-storybook": "build-storybook"
    },
+   "jest": {
+      "preset": "@insightable/scripts/jest/node"
+   },
    "dependencies": {
       "@emotion/react": "^11.7.1",
       "@emotion/styled": "^11.6.0",
@@ -40,8 +43,5 @@
       "storybook-builder-vite": "^0.1.15",
       "tsconfig": "*",
       "tsup": "^5.10.1"
-   },
-   "jest": {
-      "preset": "scripts/jest/node"
    }
 }

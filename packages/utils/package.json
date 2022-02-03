@@ -14,11 +14,11 @@
       "check:eslint": "eslint src",
       "check:typescript": "tsc --project tsconfig.json --noEmit"
    },
+   "jest": {
+      "preset": "@insightable/scripts/jest/node"
+   },
    "devDependencies": {
       "scripts": "*",
       "tsconfig": "*"
-   },
-   "jest": {
-      "preset": "scripts/jest/node"
    }
 }
