@@ -1,5 +1,5 @@
 {
-   "extends": "tsconfig/vite.json",
+   "extends": "@insightable/tsconfig/vite.json",
    "compilerOptions": {
       "rootDir": "src",
       "outDir": "dist"

@@ -1,6 +1,6 @@
+import { CounterButton } from '@insightable/ui';
 import { Box, Typography } from '@mui/material';
 import * as React from 'react';
-import { CounterButton } from 'ui';
 
 export const IndexPage = () => {
    return (

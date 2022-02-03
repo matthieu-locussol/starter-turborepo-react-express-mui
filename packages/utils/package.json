@@ -1,5 +1,5 @@
 {
-   "name": "utils",
+   "name": "@insightable/utils",
    "version": "0.0.0",
    "private": true,
    "files": [
@@ -18,7 +18,7 @@
       "preset": "@insightable/scripts/jest/node"
    },
    "devDependencies": {
-      "scripts": "*",
-      "tsconfig": "*"
+      "@insightable/scripts": "*",
+      "@insightable/tsconfig": "*"
    }
 }

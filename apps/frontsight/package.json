@@ -12,22 +12,22 @@
    "dependencies": {
       "@emotion/react": "^11.7.1",
       "@emotion/styled": "^11.6.0",
+      "@insightable/ui": "*",
+      "@insightable/utils": "*",
       "@mui/material": "^5.4.0",
       "react": "^17.0.2",
       "react-dom": "^17.0.2",
       "react-router": "^6.2.1",
-      "react-router-dom": "^6.2.1",
-      "ui": "*",
-      "utils": "*"
+      "react-router-dom": "^6.2.1"
    },
    "devDependencies": {
+      "@insightable/scripts": "*",
+      "@insightable/tsconfig": "*",
       "@types/react": "^17.0.0",
       "@types/react-dom": "^17.0.0",
       "@types/react-router": "^5.1.18",
       "@types/react-router-dom": "^5.3.3",
       "@vitejs/plugin-react-refresh": "^1.3.6",
-      "scripts": "*",
-      "tsconfig": "*",
       "vite": "^2.6.14"
    }
 }
