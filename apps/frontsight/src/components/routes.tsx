@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Routes as Switch } from 'react-router-dom';
 import { IndexPage } from '../pages';
 
