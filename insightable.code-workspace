@@ -13,13 +13,17 @@
       "editor.codeActionsOnSave": {
          "source.fixAll": true,
          "source.organizeImports": true
+      },
+      "[xml]": {
+         "editor.defaultFormatter": "redhat.vscode-xml"
       }
    },
    "extensions": {
       "recommendations": [
          "dbaeumer.vscode-eslint",
          "esbenp.prettier-vscode",
-         "PKief.material-icon-theme"
+         "PKief.material-icon-theme",
+         "silvenon.mdx"
       ]
    }
 }

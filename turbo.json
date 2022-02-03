@@ -8,6 +8,10 @@
          "outputs": [],
          "dependsOn": ["check:eslint", "check:typescript"]
       },
+      "storybook": {
+         "outputs": [],
+         "dependsOn": ["check:eslint", "check:typescript"]
+      },
       "check:eslint": {
          "dependsOn": [],
          "outputs": []

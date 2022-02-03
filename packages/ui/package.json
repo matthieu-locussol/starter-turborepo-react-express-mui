@@ -15,22 +15,32 @@
       "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
       "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
       "check:eslint": "eslint src/**/*.tsx",
-      "check:typescript": "tsc --project tsconfig.json --noEmit"
+      "check:typescript": "tsc --project tsconfig.json --noEmit",
+      "storybook": "start-storybook -p 6006",
+      "build-storybook": "build-storybook"
+   },
+   "dependencies": {
+      "@emotion/react": "^11.7.1",
+      "@emotion/styled": "^11.6.0",
+      "@mui/icons-material": "^5.3.1",
+      "@mui/material": "^5.4.0"
    },
    "devDependencies": {
+      "@babel/core": "^7.17.0",
+      "@storybook/addon-actions": "^6.5.0-alpha.34",
+      "@storybook/addon-essentials": "^6.5.0-alpha.34",
+      "@storybook/addon-links": "^6.5.0-alpha.34",
+      "@storybook/react": "^6.5.0-alpha.34",
       "@types/react": "^17.0.0",
       "@types/react-dom": "^17.0.0",
+      "babel-loader": "^8.2.3",
       "react": "^17.0.2",
       "scripts": "*",
+      "storybook-builder-vite": "^0.1.15",
       "tsconfig": "*",
       "tsup": "^5.10.1"
    },
    "jest": {
       "preset": "scripts/jest/node"
-   },
-   "dependencies": {
-      "@emotion/react": "^11.7.1",
-      "@emotion/styled": "^11.6.0",
-      "@mui/material": "^5.4.0"
    }
 }
