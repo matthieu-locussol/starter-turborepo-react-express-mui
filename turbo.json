@@ -1,0 +1,26 @@
+{
+   "pipeline": {
+      "build": {
+         "outputs": ["dist/**", ".next/**", "public/dist/**"],
+         "dependsOn": ["check:eslint", "check:typescript", "^build"]
+      },
+      "test": {
+         "outputs": [],
+         "dependsOn": ["check:eslint", "check:typescript"]
+      },
+      "check:eslint": {
+         "dependsOn": [],
+         "outputs": []
+      },
+      "check:typescript": {
+         "dependsOn": [],
+         "outputs": []
+      },
+      "dev": {
+         "cache": false
+      },
+      "clean": {
+         "cache": false
+      }
+   }
+}

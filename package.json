@@ -1,0 +1,38 @@
+{
+   "name": "insightable",
+   "version": "0.0.0",
+   "description": "A back-office generator written in TypeScript with simplicity & user-experience in mind.",
+   "repository": "git@github.com:matthieu-locussol/Insightable.git",
+   "author": "Matthieu Locussol <dev.matthieu.locussol@gmail.com> (https://www.matthieu-locussol.com)",
+   "private": true,
+   "packageManager": "yarn@1.22.17",
+   "workspaces": [
+      "apps/*",
+      "packages/*"
+   ],
+   "scripts": {
+      "dev": "turbo run dev --no-cache --parallel --continue",
+      "test": "turbo run test",
+      "build": "turbo run build --include-dependencies",
+      "clean": "turbo run clean && rm -rf node_modules",
+      "check:eslint": "turbo run check:eslint",
+      "check:prettier": "prettier --list-different --config .prettierrc.json --ignore-path .gitignore --write **/*",
+      "check:typescript": "turbo run check:typescript",
+      "postinstall": "yarn husky install",
+      "release": "standard-version -a"
+   },
+   "devDependencies": {
+      "@commitlint/cli": "^16.1.0",
+      "@commitlint/config-conventional": "^16.0.0",
+      "@types/jest": "^27.4.0",
+      "@types/node": "^17.0.14",
+      "eslint": "^8.8.0",
+      "husky": "^7.0.4",
+      "jest": "^27.4.7",
+      "prettier": "^2.5.1",
+      "standard-version": "^9.3.2",
+      "ts-jest": "^27.1.3",
+      "turbo": "latest",
+      "typescript": "^4.5.5"
+   }
+}

@@ -1,0 +1,37 @@
+{
+   "name": "ui",
+   "version": "0.0.0",
+   "module": "./dist/index.mjs",
+   "types": "./dist/index.d.ts",
+   "sideEffects": false,
+   "private": true,
+   "license": "MIT",
+   "files": [
+      "dist/**"
+   ],
+   "main": "dist/index.js",
+   "scripts": {
+      "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+      "test": "jest",
+      "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+      "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+      "check:eslint": "eslint src/**/*.tsx",
+      "check:typescript": "tsc --project tsconfig.json --noEmit"
+   },
+   "devDependencies": {
+      "@types/react": "^17.0.0",
+      "@types/react-dom": "^17.0.0",
+      "react": "^17.0.2",
+      "scripts": "*",
+      "tsconfig": "*",
+      "tsup": "^5.10.1"
+   },
+   "jest": {
+      "preset": "scripts/jest/node"
+   },
+   "dependencies": {
+      "@emotion/react": "^11.7.1",
+      "@emotion/styled": "^11.6.0",
+      "@mui/material": "^5.4.0"
+   }
+}

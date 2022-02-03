@@ -1,0 +1,24 @@
+{
+   "name": "utils",
+   "version": "0.0.0",
+   "private": true,
+   "files": [
+      "dist/**"
+   ],
+   "main": "dist/index.js",
+   "scripts": {
+      "dev": "tsc -w",
+      "test": "jest",
+      "build": "tsc",
+      "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+      "check:eslint": "eslint src",
+      "check:typescript": "tsc --project tsconfig.json --noEmit"
+   },
+   "devDependencies": {
+      "scripts": "*",
+      "tsconfig": "*"
+   },
+   "jest": {
+      "preset": "scripts/jest/node"
+   }
+}
