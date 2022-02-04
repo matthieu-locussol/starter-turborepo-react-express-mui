@@ -81,6 +81,7 @@ jobs:
       runs-on: ubuntu-latest
       needs: [unit_tests]
       # if: github.ref == 'refs/heads/master'
+      if: github.event_name == 'push'
       steps:
          - uses: actions/checkout@v2
          - uses: amondnet/vercel-action@v20
@@ -90,3 +91,4 @@ jobs:
               vercel-args: '--prod'
               vercel-org-id: ${{ secrets.VERCEL_ORGANIZATION_ID}}
               vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
+              alias-domains: ${{github.event.head_commit.id}}.insightable.vercel.app
