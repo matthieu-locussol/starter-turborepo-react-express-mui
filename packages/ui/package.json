@@ -14,7 +14,7 @@
       "test": "jest",
       "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
       "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-      "check:eslint": "eslint src/**/*.tsx",
+      "check:eslint": "eslint src",
       "check:typescript": "tsc --project tsconfig.json --noEmit",
       "storybook": "start-storybook -p 6006",
       "build-storybook": "build-storybook"
