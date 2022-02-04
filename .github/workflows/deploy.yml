@@ -88,7 +88,7 @@ jobs:
            with:
               vercel-token: ${{ secrets.VERCEL_TOKEN }}
               github-token: ${{ secrets.GITHUB_TOKEN }}
-              vercel-args: '--prod'
+              # vercel-args: '--prod'
               vercel-org-id: ${{ secrets.VERCEL_ORGANIZATION_ID}}
               vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
               alias-domains: ${{github.event.head_commit.id}}.insightable.vercel.app
