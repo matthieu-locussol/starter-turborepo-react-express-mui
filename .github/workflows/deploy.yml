@@ -59,7 +59,7 @@ jobs:
               cache: yarn
               cache-dependency-path: yarn.lock
          - run: yarn install
-         - run: yarn tests:ci
+         - run: yarn test
 
    deploy:
       name: Deploy
