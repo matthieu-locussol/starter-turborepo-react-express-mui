@@ -12,39 +12,60 @@ jobs:
       runs-on: ubuntu-latest
       steps:
          - uses: actions/checkout@v2
+         - name: Cache pnpm modules
+           uses: actions/cache@v2
+           with:
+              path: ~/.pnpm-store
+              key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+              restore-keys: |
+                 ${{ runner.os }}-
+         - uses: pnpm/action-setup@v2
+           with:
+              version: 6.29.1
          - uses: actions/setup-node@v2
            with:
               node-version: '16.13.0'
-              cache: yarn
-              cache-dependency-path: yarn.lock
-         - run: yarn install
-         - run: yarn check:eslint
+         - run: pnpm check:eslint
 
    prettier:
       name: Check prettier
       runs-on: ubuntu-latest
       steps:
          - uses: actions/checkout@v2
+         - name: Cache pnpm modules
+           uses: actions/cache@v2
+           with:
+              path: ~/.pnpm-store
+              key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+              restore-keys: |
+                 ${{ runner.os }}-
+         - uses: pnpm/action-setup@v2
+           with:
+              version: 6.29.1
          - uses: actions/setup-node@v2
            with:
               node-version: '16.13.0'
-              cache: yarn
-              cache-dependency-path: yarn.lock
-         - run: yarn install
-         - run: yarn check:prettier
+         - run: pnpm check:prettier
 
    typescript:
       name: Check typescript
       runs-on: ubuntu-latest
       steps:
          - uses: actions/checkout@v2
+         - name: Cache pnpm modules
+           uses: actions/cache@v2
+           with:
+              path: ~/.pnpm-store
+              key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+              restore-keys: |
+                 ${{ runner.os }}-
+         - uses: pnpm/action-setup@v2
+           with:
+              version: 6.29.1
          - uses: actions/setup-node@v2
            with:
               node-version: '16.13.0'
-              cache: yarn
-              cache-dependency-path: yarn.lock
-         - run: yarn install
-         - run: yarn check:typescript
+         - run: pnpm check:typescript
 
    unit_tests:
       name: Unit tests
@@ -52,13 +73,20 @@ jobs:
       needs: [prettier, typescript, eslint]
       steps:
          - uses: actions/checkout@v2
+         - name: Cache pnpm modules
+           uses: actions/cache@v2
+           with:
+              path: ~/.pnpm-store
+              key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+              restore-keys: |
+                 ${{ runner.os }}-
+         - uses: pnpm/action-setup@v2
+           with:
+              version: 6.29.1
          - uses: actions/setup-node@v2
            with:
               node-version: '16.13.0'
-              cache: yarn
-              cache-dependency-path: yarn.lock
-         - run: yarn install
-         - run: yarn test
+         - run: pnpm test
 
    deploy_preview:
       name: Deploy (Preview)

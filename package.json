@@ -5,7 +5,7 @@
    "repository": "git@github.com:matthieu-locussol/Insightable.git",
    "author": "Matthieu Locussol <dev.matthieu.locussol@gmail.com> (https://www.matthieu-locussol.com)",
    "private": true,
-   "packageManager": "yarn@1.22.17",
+   "packageManager": "pnpm@6.29.1",
    "workspaces": [
       "apps/*",
       "packages/*"
@@ -18,7 +18,7 @@
       "check:eslint": "turbo run check:eslint",
       "check:prettier": "prettier --list-different --config .prettierrc.json --ignore-path .gitignore --write **/*",
       "check:typescript": "turbo run check:typescript",
-      "postinstall": "yarn husky install",
+      "postinstall": "pnpm husky install",
       "release": "standard-version -a"
    },
    "devDependencies": {
