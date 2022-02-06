@@ -6,11 +6,11 @@
       },
       "test": {
          "outputs": [],
-         "dependsOn": ["check:eslint", "check:typescript"]
+         "dependsOn": []
       },
       "storybook": {
          "outputs": [],
-         "dependsOn": ["check:eslint", "check:typescript"]
+         "dependsOn": []
       },
       "check:eslint": {
          "dependsOn": [],
