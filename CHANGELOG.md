@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.2](https://github.com/matthieu-locussol/Insightable/compare/v0.3.1...v0.3.2) (2022-02-06)
+
+
+### Bug Fixes
+
+* added missing install in ci ([a8a80b8](https://github.com/matthieu-locussol/Insightable/commit/a8a80b8d06607d9bf22791e95845c434fcecc7e4))
+* removed eslint & tsc dependencies in storybook and tests jobs ([5e0bdb0](https://github.com/matthieu-locussol/Insightable/commit/5e0bdb0f9a51b010f4de35e601a94eb56b1a1600))
+
 ### 0.3.1 (2022-02-05)
 
 
