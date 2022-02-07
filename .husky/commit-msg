@@ -1,7 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-pnpm commitlint --edit $1
-pnpm check:eslint
-pnpm check:prettier
-pnpm check:typescript
+yarn commitlint --edit $1
+yarn check:eslint
+yarn check:prettier
+yarn check:typescript
