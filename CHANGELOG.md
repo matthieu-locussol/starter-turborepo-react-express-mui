@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.3](https://github.com/matthieu-locussol/Insightable/compare/v0.3.2...v0.3.3) (2022-02-07)
+
+
+### Bug Fixes
+
+* revert switching from yarn to pnpm ([8bfae2c](https://github.com/matthieu-locussol/Insightable/commit/8bfae2cd6ebdf8323fd1d6bb417e9fe3e37f5d92))
+
 ### [0.3.2](https://github.com/matthieu-locussol/Insightable/compare/v0.3.1...v0.3.2) (2022-02-06)
 
 

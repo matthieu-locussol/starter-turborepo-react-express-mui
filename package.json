@@ -1,6 +1,6 @@
 {
    "name": "insightable",
-   "version": "0.3.2",
+   "version": "0.3.3",
    "description": "A back-office generator written in TypeScript with simplicity & user-experience in mind.",
    "repository": "git@github.com:matthieu-locussol/Insightable.git",
    "author": "Matthieu Locussol <dev.matthieu.locussol@gmail.com> (https://www.matthieu-locussol.com)",
