@@ -1,7 +1,7 @@
 {
-   "name": "insightable",
-   "version": "0.3.3",
-   "description": "A back-office generator written in TypeScript with simplicity & user-experience in mind.",
+   "name": "starter-turborepo-react-express-mui",
+   "version": "0.0.0",
+   "description": "A starter for web applications using Turborepo based on my preferences.",
    "repository": "git@github.com:matthieu-locussol/Insightable.git",
    "author": "Matthieu Locussol <dev.matthieu.locussol@gmail.com> (https://www.matthieu-locussol.com)",
    "private": true,

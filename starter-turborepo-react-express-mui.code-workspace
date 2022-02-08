@@ -1,7 +1,7 @@
 {
    "folders": [
       {
-         "name": "Insightable ✨",
+         "name": "Starter Turborepo ✨",
          "path": "."
       }
    ],
@@ -19,8 +19,6 @@
       "recommendations": [
          "dbaeumer.vscode-eslint",
          "esbenp.prettier-vscode",
-         "PKief.material-icon-theme",
-         "silvenon.mdx"
       ]
    }
 }
