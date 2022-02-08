@@ -1,5 +1,5 @@
 {
-   "name": "@insightable/tsconfig",
+   "name": "@packages/tsconfig",
    "version": "0.0.0",
    "private": true,
    "publishConfig": {

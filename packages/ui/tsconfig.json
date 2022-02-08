@@ -2,7 +2,7 @@
    "compilerOptions": {
       "lib": ["dom", "ES2015"]
    },
-   "extends": "@insightable/tsconfig/react.json",
+   "extends": "@packages/tsconfig/react.json",
    "include": ["src"],
    "exclude": ["dist", "build", "node_modules"]
 }

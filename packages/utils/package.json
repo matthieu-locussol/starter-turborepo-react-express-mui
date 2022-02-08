@@ -1,5 +1,5 @@
 {
-   "name": "@insightable/utils",
+   "name": "@packages/utils",
    "version": "0.0.0",
    "private": true,
    "files": [
@@ -15,10 +15,10 @@
       "check:typescript": "tsc --project tsconfig.json --noEmit"
    },
    "jest": {
-      "preset": "@insightable/scripts/jest/node"
+      "preset": "@packages/scripts/jest/node"
    },
    "devDependencies": {
-      "@insightable/scripts": "*",
-      "@insightable/tsconfig": "*"
+      "@packages/scripts": "*",
+      "@packages/tsconfig": "*"
    }
 }

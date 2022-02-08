@@ -18,10 +18,10 @@ LinkToGoogle.args = {
    href: 'https://www.google.fr',
 };
 
-export const LinkToInsightable = Template.bind({});
-LinkToInsightable.args = {
-   children: 'Go to Insightable',
-   href: 'https://github.com/matthieu-locussol/Insightable',
+export const LinkToStarter = Template.bind({});
+LinkToStarter.args = {
+   children: 'Go to Starter',
+   href: 'https://github.com/matthieu-locussol/starter-turborepo-react-express-mui',
 };
 
 export default Story;

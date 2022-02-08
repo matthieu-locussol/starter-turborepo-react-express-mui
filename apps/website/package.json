@@ -1,9 +1,9 @@
 {
-   "name": "frontsight",
+   "name": "website",
    "private": true,
    "version": "0.0.0",
    "scripts": {
-      "dev": "vite --port 3001 --clearScreen false",
+      "dev": "vite --port 3000 --clearScreen false",
       "build": "vite build",
       "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
       "check:eslint": "eslint src",
@@ -12,8 +12,8 @@
    "dependencies": {
       "@emotion/react": "^11.7.1",
       "@emotion/styled": "^11.6.0",
-      "@insightable/ui": "*",
-      "@insightable/utils": "*",
+      "@packages/ui": "*",
+      "@packages/utils": "*",
       "@mui/material": "^5.4.0",
       "react": "^17.0.2",
       "react-dom": "^17.0.2",
@@ -21,8 +21,8 @@
       "react-router-dom": "^6.2.1"
    },
    "devDependencies": {
-      "@insightable/scripts": "*",
-      "@insightable/tsconfig": "*",
+      "@packages/scripts": "*",
+      "@packages/tsconfig": "*",
       "@types/react": "^17.0.0",
       "@types/react-dom": "^17.0.0",
       "@types/react-router": "^5.1.18",

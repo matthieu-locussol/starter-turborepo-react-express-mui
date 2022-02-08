@@ -1,5 +1,5 @@
 {
-   "name": "@insightable/ui",
+   "name": "@packages/ui",
    "version": "0.0.0",
    "private": true,
    "main": "src/index.tsx",
@@ -14,7 +14,7 @@
       "build-storybook": "build-storybook"
    },
    "jest": {
-      "preset": "@insightable/scripts/jest/node"
+      "preset": "@packages/scripts/jest/node"
    },
    "dependencies": {
       "@emotion/react": "^11.7.1",
@@ -26,8 +26,8 @@
    },
    "devDependencies": {
       "@babel/core": "^7.17.0",
-      "@insightable/scripts": "*",
-      "@insightable/tsconfig": "*",
+      "@packages/scripts": "*",
+      "@packages/tsconfig": "*",
       "@storybook/addon-actions": "^6.5.0-alpha.34",
       "@storybook/addon-essentials": "^6.5.0-alpha.34",
       "@storybook/addon-links": "^6.5.0-alpha.34",
