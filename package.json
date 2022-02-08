@@ -1,6 +1,6 @@
 {
    "name": "starter-turborepo-react-express-mui",
-   "version": "0.0.0",
+   "version": "1.0.0",
    "description": "A starter for web applications using Turborepo based on my preferences.",
    "repository": "git@github.com:matthieu-locussol/starter-turborepo-react-express-mui.git",
    "author": "Matthieu Locussol <dev.matthieu.locussol@gmail.com> (https://www.matthieu-locussol.com)",
