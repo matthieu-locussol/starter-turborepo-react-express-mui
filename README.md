@@ -12,10 +12,9 @@ way I like:
    -  **app-backend**: back-end for your application, using Express & esbuild
    -  **website**: a static website using Next.js automatically deployed on Vercel using a workflow
 -  ### Packages
-   -  **scripts**: shared ESlint & Jest configurations (accessible using
-      `import {...} from '@packages/scripts'`)
+   -  **scripts**: shared ESlint & Jest configurations
    -  **tsconfig**: shared TypeScript configurations for Vite, React & Node applications
-   -  **ui**: shared UI components
+   -  **ui**: shared UI components with Storybook
    -  **utils**: shared utility functions
 
 You can access packages from other packages by listing them in a repository's dependencies and
